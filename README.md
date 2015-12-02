@@ -1,5 +1,5 @@
 # System-insights
-This codebase provides the details connected hosts(IP/Hostname) and their health status. The list of underlying techonologies used are as follows
+This codebase provides the details of connected hosts(IP/Hostname) and their health status. The list of underlying techonologies used are as follows
 * HTML5
 * Css3
 * Javascript 
