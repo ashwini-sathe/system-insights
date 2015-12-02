@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>index</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href="css/app.css" rel="stylesheet">
+  <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body id="page-body">
+
+  <!-- main container-fluid start -->
+  <div class="container-fluid"> 
+    <div class="row">
+      <header>
+        <div class="logo-container">
+          <div class="container">
+            <div>
+              <h1> <a href="index.html" title="Insight"> Insights </a> </h1>
+            </div> 
+          </div>
+        </div>
+
+
+        <nav class="navbar navbar-default" id="navigation" role="navigation">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="subnav collapse navbar-collapse" id="navbar-collapse">
+                <div class="container"> 
+                  <ul class="nav navbar-nav"> 
+                    <li class="active">
+                      <a href="#page-body">
+                        <img src="images/info-new.png" alt="general" title="general">
+                        General <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li>
+                        <a href="#cpu"> <img src="images/cpu.png" alt="cpu" title="cpu">
+                         <span>CPU  </span></a>
+                       </li>
+                       <li class="network">
+                         <a href="#network"> <img src="images/network.png" alt="Network" title="Network">
+                          <span>Network</span> </a>
+                        </li>
+                        <li>
+                         <a href="#ram"><img src="images/ram.png" alt="RAM" title="RAM">
+                          <span>RAM</span>  </a>
+                        </li>
+
+                        <li> 
+                         <a href="#disk"><img src="images/disk.png" alt="disk" title="disk">
+                           <span>Disk</span>  </a>
+                         </li>      
+
+                       </ul>
+                     </div>
+
+                   </div><!-- /.navbar-collapse -->
+                 </div>
+               </div><!-- /.container-fluid -->
+             </nav> 
+
+
+           </header>
+
+           <!-- middle-container start -->
+           <div class="middle-container">
+            <div class="container">
+              <div class="tab-bg">
+              <div class="row">
+                
+                <div class="search-container clearfix">
+                  <div class="col-md-6">
+                    <h4>Overall System Performance - <small>aquarius.ping.uio.no</small></h4>
+                  </div>
+                </div>
+              </div>
+
+                <div class="info-content">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h2 class="panel-title"> System </h2>
+                      </div>
+                      <!-- panel-body start -->
+                      <div class="panel-body">
+                        <table class="table tableContainer table-striped">
+                          <tbody>
+                            <tr>
+                              <td> <span> Hostname </span></td>
+                              <td>vm-debian8-part</td>
+                            </tr>
+                            <tr>
+                              <td><span> OS </span></td>
+                              <td>Debian GNU/Linux8.1(jessie) </td>
+                            </tr>
+                            <tr>
+                              <td><span> Kernal Version </span></td>
+                              <td>3.16.0.4.amd64</td>
+                            </tr>
+                            <tr>
+                              <td><span> Uptime </span></td>
+                              <td> 1 day, 1 hour and 27 minutes</td>
+                            </tr>
+                            <tr>
+                              <td><span> Last Boot </span></td>
+                              <td>2015-07-13 10:32:46</td>
+                            </tr>  
+                            <tr>
+                              <td><span> Server date & time </span></td>
+                              <td>Monday Jul 13 16:16:55 CEST 2015</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- panel-body end -->
+                    </div>
+                  </div>
+
+                  <div class="col-md-6" id="Server-Status">
+                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title"> Server Status </h2>
+                    </div>
+
+                    <!-- panel-body start -->
+                    <div class="panel-body"  id="server">
+                     <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div id="container-cpu" class="services-status"></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                     <div id="container-ram" class="services-status"></div>
+                   </div>
+                 </div>
+                 <!-- panel-body end -->
+               </div>   
+             </div>
+
+
+           </div>
+           <!-- system end -->
+
+           <!-- CPU start -->
+           <div class="row">
+            <div class="col-md-6" id="cpu">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h2 class="panel-title"> CPU Usage </h2>
+                </div>
+
+                <!-- panel-body start -->
+                <div class="panel-body">
+                  <table class="table tableContainer table-striped">
+                    <tbody>
+                      <tr>
+                        <td> <span> Model </span></td>
+                        <td>Intel(R) Xeon(R) CPU E5-1620 V2@3.70GHz</td>
+                      </tr>
+                      <tr>
+                        <td> <span> Core </span></td>
+                        <td> 1</td>
+                      </tr>
+                      <tr>
+                        <td> <span> Speed </span></td>
+                        <td>3654.323 MHz</td>
+                      </tr>
+                      <tr>
+                        <td> <span> Cache </span></td>
+                        <td>6144 KB</td>
+                      </tr>
+                      <tr>
+                        <td> <span> Bogomips </span></td>
+                        <td>7308.64</td>
+                      </tr>
+                      <tr>
+                        <td> <span> Temperature </span></td>
+                        <td>39<sup>o</sup> C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- panel-body end -->
+
+              </div>
+            </div>
+
+            <div class="col-md-6" id="Services-Status">
+              <!-- online-panel start -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h2 class="panel-title"> Services Status </h2>
+                </div>
+
+                <!-- panel-body start -->
+                <div class="panel-body">
+                  <table class="table disk-table table-striped">
+                    <tbody>
+                      <tr>
+                        <td><span class="label label-success">ONLINE</span></td>
+                        <td> Web Server </td>
+                        <td> 80 </td>
+                      </tr>                            <tr>
+                      <td><span class="label label-danger">OFFLINE</span></td>
+                      <td> Email Server (incoming) </td>
+                      <td> 993 </td>
+                    </tr>
+                    <tr>
+                      <td><span class="label label-danger">OFFLINE</span></td>
+                      <td>Email Server (outgoing)</td>
+                      <td> 587 </td>
+                    </tr>
+                    <tr>
+                      <td><span class="label label-danger">OFFLINE</span></td>
+                      <td> FTP Server </td>
+                      <td> 21 </td>
+                    </tr>  
+                    <tr>
+                      <td><span class="label label-danger">OFFLINE</span></td>
+                      <td> Database Server </td>
+                      <td> 3306 </td>
+                    </tr>  
+                    <tr>
+                      <td><span class="label label-success">ONLINE</span></td>
+                      <td> SSH </td>
+                      <td> 22 </td>
+                    </tr>                         
+                  </tbody>
+                </table>
+              </div>
+              <!-- panel-body end -->
+            </div>
+            <!-- online-panel end -->
+          </div>
+        </div>
+        <!-- CPU end -->
+
+
+
+
+        <!-- network start -->
+        <div class="row" id="network-statistics">
+          <div class="col-md-4" id="network">
+            <!-- network panel start -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"> Network Usage </h2>
+              </div>
+
+              <!-- panel-body start -->
+              <div class="panel-body">
+                <table class="table network-table table-striped">
+                  <thead>
+                    <tr>
+                      <th> Interface</th>
+                      <th>IP Address</th>
+                      <th> Receive </th>
+                      <th> Transmit </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>eth0</td>  
+                      <td> 192.168.2.64</td> 
+                      <td>298.03 MB</td>
+                      <td>19.01 MB</td>
+                    </tr>    
+                    <tr>
+                      <td>lo</td>  
+                      <td> 172.0.0.1</td>
+                      <td>1.9 KB</td>
+                      <td>1.9 KB</td> 
+                    </tr>                                      
+                  </tbody>
+                </table>
+              </div>
+              <!-- panel-body end -->
+            </div>
+            <!-- network panel end -->
+          </div>
+
+
+          <div class="col-md-4" id="ping">
+            <!-- ping panel start -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"> Ping  </h2>
+              </div>
+
+              <!-- panel-body start -->
+              <div class="panel-body">
+                <table class="table network-table table-striped">
+                  <thead>
+                    <tr>
+                      <th> Host </th>
+                      <th> Time (In MS)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> wikipedia.org </td>  
+                      <td> 264.331 </td> 
+                    </tr>    
+                    <tr>
+                      <td> facebook.com </td>  
+                      <td>118.838 </td> 
+                    </tr>   
+                    <tr>
+                      <td> github.com </td>  
+                      <td> 322.958 </td> 
+                    </tr>                                        
+                  </tbody>
+                </table>
+              </div>
+              <!-- panel-body end -->
+            </div>
+            <!-- ping panel end -->
+          </div>
+
+          <div class="col-md-4" id="bandwidth">
+            <!-- ping panel start -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"> Bandwidth </h2>
+              </div>
+
+              <!-- panel-body start -->
+              <div class="panel-body">
+                <table class="table bandwidth-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="bandwidth">
+                          <span>RX: </span> <h4>2,314  </h4>
+                          <div class="clearfix"></div>
+                        </div> 
+                      </td>  
+
+                      <td class="tx">
+                        <div class="bandwidth">
+                          <span>TX: </span> <h4>0 </h4>
+                          <div class="clearfix"></div>
+                        </div> 
+                      </td>
+                    </tr>                                           
+                  </tbody>
+                </table>
+              </div>
+              <!-- panel-body end -->
+            </div>
+            <!-- ping panel end -->
+          </div>
+        </div>
+        <!-- network end -->
+
+
+        <!-- RAM start -->
+        <div class="row" id="">
+          <!-- load-avg start -->                
+          <div class="col-md-6"> 
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"> Load Average </h2>
+              </div>
+              <div class="panel-body load-section">   	
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <h6> 1 Min </h6>
+                  <div id="myStat" data-dimension="150" data-text="80%" data-info="" data-width="20" data-fontsize="28" data-percent="85" data-fgcolor="#c30e0e" data-bgcolor="#eee" data-fill="#fff" data-total="100" data-part="80" data-icon="long-arrow-up" data-icon-size="20" data-icon-color="#fff"></div>
+                  <div class="clearfix"></div> 
+                </div>
+
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <h6> 5 Min </h6>
+                  <div id="memory" data-dimension="150" data-text="52%" data-info="" data-width="30" data-fontsize="28" data-percent="35" data-fgcolor="#f2cf0e" data-bgcolor="#eee" data-fill="#fff" data-total="100" data-part="50" data-icon="long-arrow-up" data-icon-size="20" data-icon-color="#fff"></div>
+                  <div class="clearfix"></div>   
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <h6> 15 Min </h6>
+                  <div id="load" data-dimension="150" data-text="28%" data-info="" data-width="20" data-fontsize="28" data-percent="28" data-fgcolor="#4aa23a" data-bgcolor="#eee" data-fill="#fff" data-total="100" data-part="28" data-icon="long-arrow-up" data-icon-size="20" data-icon-color="#fff"></div>
+                  <div class="clearfix"></div> 
+                </div>
+
+                <div class="clearfix"> </div>
+              </div>
+            </div>
+          </div>
+          <!-- load-avg end -->  
+
+
+
+
+
+          <!-- RAM panel start -->
+          <div class="col-md-6" id="ram">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"> RAM Usage </h2>
+              </div>
+
+              <!-- panel-body start -->
+              <div class="panel-body">
+                <table class="table ram-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h3> Total </h3>
+                        <h4> 3,925 <span>MB </span></h4>
+
+                      </td>
+
+                      <td>
+                        <h3>Used </h3>
+                        <h4>777 <span>MB </span></h4>
+                        <h5>20%</h5>
+                      </td>
+
+                      <td>
+                        <h3> Free </h3>
+                        <h4>3,148  <span>MB </span></h4>
+                        <h5>80%</h5>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- panel-body end -->
+            </div>
+          </div>
+          <!-- RAM panel end -->
+
+
+        </div>
+        <!-- RAM end -->
+
+
+        <!-- disk Start -->
+        <div class="row" id="disk">
+          <div class="col-md-12">
+            <!-- ping panel start -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"> Disk Usage </h2>
+              </div>
+
+              <!-- panel-body start -->
+              <div class="panel-body">
+                <table class="table disk-table table-striped">
+                  <thead>
+                    <tr>
+                      <th> File System </th>
+                      <th> Mount </th>
+                      <th> Use </th>
+                      <th> Free </th>
+                      <th> Used </th>
+                      <th> Total </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> /dev/sda1 </td>
+                      <td> / </td>
+                      <td> 
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                          80%
+                        </div>
+                      </div>
+                    </td>
+                    <td> 1.42 GB </td>
+                    <td> 818.07 MB </td>
+                    <td> 2.36 GB </td>
+                  </tr>  
+
+                  <tr>
+                    <td> /dev/sda4 </td>
+                    <td> /var </td>
+                    <td> 
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        60%
+                      </div>
+                    </div>
+                  </td>
+                  <td> 2 GB </td>
+                  <td> 212.04 MB </td>
+                  <td> 2.34 GB </td>
+                </tr>  
+
+                <tr>
+                  <td> /dev/sda3 </td>
+                  <td> /home </td>
+                  <td> 
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10"
+                      aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                      30%
+                    </div>
+                  </div>
+                </td>
+                <td> 2.53 GB </td>
+                <td> 4.21 MB </td>
+                <td> 2.69 GB </td>
+              </tr>  
+
+            </tbody>
+          </table>
+        </div>
+        <!-- panel-body end -->
+      </div>
+      <!-- ping panel end -->
+
+    </div>
+  </div>
+  <!-- disk end -->
+
+  <!-- disk-type start -->
+  <div class="row" id="swap">
+    <div class="col-md-4">
+      <!-- swap panel start -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"> Swap Usage </h2>
+        </div>
+
+        <!-- panel-body start -->
+        <div class="panel-body">
+          <table class="table disk-table table-striped">
+            <tbody>
+              <tr>
+                <td> Used% </td>
+                <td> 0 %</td>
+              </tr> 
+              <tr>
+                <td> Used </td>
+                <td> 0 B</td>
+              </tr>  
+              <tr>
+                <td> Free  </td>
+                <td> 307 MB</td>
+              </tr>       
+              <tr>
+                <td> Total  </td>
+                <td>307 MB</td>
+              </tr>                                                         
+            </tbody>
+          </table>
+        </div>
+        <!-- panel-body end -->
+      </div>
+      <!-- swap panel end -->
+    </div>
+
+
+    <div class="col-md-8" id="boot">
+      <!-- boot panel start -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"> Boot Usage </h2>
+        </div>
+
+        <!-- panel-body start -->
+        <div class="panel-body">
+          <table class="table disk-table table-striped">
+            <thead>
+              <tr>
+                <th> Partition</th>
+                <th> File System</th>
+                <th> Size</th>
+                <th> Used</th>
+                <th> Unused</th>
+                <th> Flags</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> /dev/sda1 </td>
+                <td> nfs</td>
+                <td>78.72 GB</td>
+                <td>22.97 GiB</td>
+                <td>55.75 GiB</td>
+                <td>boot</td>
+              </tr> 
+              <tr>
+                <td> /dev/sda2 </td>
+                <td> nfs</td>
+                <td>78.72 GB</td>
+                <td>22.97 GiB</td>
+                <td>55.75 GiB</td>
+                <td>boot</td>
+              </tr> 
+              <tr>
+                <td> /dev/sda5 </td>
+                <td> nfs</td>
+                <td>78.72 GB</td>
+                <td>22.97 GiB</td>
+                <td>55.75 GiB</td>
+                <td>boot</td>
+              </tr> 
+              <tr>
+                <td> /dev/sda7 </td>
+                <td> nfs</td>
+                <td>78.72 GB</td>
+                <td>22.97 GiB</td>
+                <td>55.75 GiB</td>
+                <td>boot</td>
+              </tr> 
+
+            </tbody>
+          </table>
+        </div>
+        <!-- panel-body end -->
+      </div>
+      <!-- boot panel end -->
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+  <!-- disk-type end -->
+
+  <!-- Users start -->
+  <div class="row" id="users">
+    <div class="col-md-4">
+      <!-- users panel start -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"> Users </h2>
+        </div>
+
+        <!-- panel-body start -->
+        <div class="panel-body user-body">
+          <table class="table disk-table table-striped">
+            <thead>
+              <tr>
+                <th> Type </th>
+                <th> User </th>
+                <th> Home </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> User </td>
+                <td> midday </td>
+                <td>/home/midday </td>
+              </tr> 
+              <tr>
+                <td> User </td>
+                <td> tecmint </td>
+                <td>/home/tecmint </td>
+              </tr> 
+              <tr>
+                <td> User </td>
+                <td> imagedata </td>
+                <td>/data/httpd/htdocs/imagedata </td>
+              </tr> 
+
+            </tbody>
+          </table>
+        </div>
+        <!-- panel-body end -->
+      </div>
+      <!-- users panel end -->
+    </div>
+
+    <div class="col-md-4" id="online">
+      <!-- online-panel start -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"> Online </h2>
+        </div>
+
+        <!-- panel-body start -->
+        <div class="panel-body online-body">
+          <table class="table disk-table table-striped">
+            <thead>
+              <tr>
+                <th> Who </th>
+                <th> From </th>
+                <th> Login At </th>
+                <th> Idle </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> midday </td>
+                <td> 172.16.25.125</td>
+                <td>00:00 </td>
+                <td> 12:20 </td>
+              </tr>                                                    
+            </tbody>
+          </table>
+        </div>
+        <!-- panel-body end -->
+      </div>
+      <!-- online-panel end -->
+    </div>
+
+    <div class="col-md-4" id="login">
+      <!-- online-panel start -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"> Last Login </h2>
+        </div>
+
+        <!-- panel-body start -->
+        <div class="panel-body login-body">
+          <table class="table disk-table table-striped">
+            <thead>
+              <tr>
+                <th> Who </th>
+                <th> From </th>
+                <th> When </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> midday </td>
+                <td> 172.16.25.125</td>
+                <td> Tue Apr29 00:00:49 +530</td>
+              </tr>                                                    
+            </tbody>
+          </table>
+        </div>
+        <!-- panel-body end -->
+      </div>
+      <!-- online-panel end -->
+
+    </div>
+  </div>
+  <!-- Users end -->
+
+</div>
+
+</div>
+</div> 
+<!-- middle-container close -->
+</div>
+</div>
+</div>
+<!-- main container-fluid end -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.circliful.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+    $('#myStat').circliful();
+    $('#memory').circliful();
+    $('#load').circliful();
+    $('#Cpu').circliful();
+  }); 
+</script>
+
+<script type="text/javascript" src="js/nav.js"></script>
+</body>
+</html>

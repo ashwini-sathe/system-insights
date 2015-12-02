@@ -1,0 +1,403 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family:font-family: 'PT Sans', sans-serif;;
+	font-size: 13px;
+	background: #F0F3F5;
+	color: #3e4b5c;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li {
+	padding: 0px;
+	margin: 0px;
+}
+.container {
+	width: 1280px;
+}
+.logo-container {
+	background: #1CAFEC;
+}
+
+.logo-container a{ 
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo-container h1 {
+	font-size: 24px;
+	line-height: 50px;
+}
+a:focus { 
+	outline: none; 
+	border:none;
+}
+
+ul {
+	width: 100%;
+}
+
+.nav>li {
+	padding-top: 10px;
+	width: 95px;
+	border-left: 1px solid #e6e6e6;
+	text-align: center;
+}
+
+.nav>li.active {
+	background: #F0F3F5;
+}
+.navbar-default .nav>li.active a { 
+	background: none;
+	color: #000;
+}
+.navbar-nav > li > a {
+	padding-bottom: 10px;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+	background: none;
+	color:#333;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+	background: none
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-size: 14px;
+	padding-top: 0px;	
+}
+
+.navbar-nav li a img {
+	width: 16px;
+}
+
+.navbar-nav li a span {
+	display: block;
+}
+.subnav {
+	background: #FFF;
+}
+.middle-container {
+	padding: 3em 0;
+}
+
+.tab-bg {
+	background-color: #fff;
+}
+
+.table.table-list {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.table-list>thead>tr>th a {
+	font-size: 15px;
+}
+
+.table-list>tbody>tr>td:first-child {
+	color: red;
+	width: 30%;
+}
+.table-list>tbody>tr>td span {
+	display: inline-block;
+	padding: 0 15px 0 0;
+	margin: 0 15px 0 0;
+	border-right: 1px solid #ccc;
+}
+
+.table-list>tbody>tr>td span:last-child {
+	border-right:0;
+}
+.search-container {
+	border-bottom: 1px solid #e4e9ed;
+	margin: 0 15px;
+}
+
+.search-container h4{ 
+	line-height: 60px;
+	padding: 0 15px;
+}
+
+.search {
+	float: right;
+}
+.info-content {
+	padding: 30px;
+}
+#custom-search-input{
+	padding: 2px;
+	border: solid 1px #E4E4E4;
+	background-color: #fff;
+	margin: 10px -5px;
+}
+
+#custom-search-input input{
+	border: 0;
+	box-shadow: none;
+}
+
+#custom-search-input button{
+	margin: 2px 0 0 0;
+	background: none;
+	box-shadow: none;
+	border: 0;
+	color: #666666;
+	padding: 0 8px 0 10px;
+	border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+	border: 0;
+	box-shadow: none;
+	border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+	font-size: 15px;
+}
+.hosts-list {
+	padding: 10px 30px 30px 30px;
+}
+.middle-container h3 {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+.panel-title {
+	color: #fff;
+	font-weight: bold;
+}
+
+.panel-body {
+	padding: 15px 15px 0 15px;
+}
+
+.panel-default>.panel-heading {
+	background-color: #2a5887;
+}
+
+.tableContainer>tbody>tr>td span {
+	font-weight: bold;
+}
+
+
+.bandwidth-table>tbody>tr>td:first-child {
+	border-top: 0;
+	border-right: 1px solid #ccc;
+}
+
+.bandwidth-table>tbody>tr>td.tx {
+	padding: 8px 0 8px 50px;
+	border: 0;
+}
+
+.bandwidth span{
+	font-weight: 0;
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	padding-top: 11px
+}
+.bandwidth h4 {
+	float: left;
+	font-size: 20px;
+	margin-left: 5px;
+	padding-top: 7px;
+}
+
+#ping {
+	padding-left: 0
+}
+
+#bandwidth {
+	padding-left: 0
+}
+
+.progress {
+	margin-bottom: 0;
+	margin-right:10px;
+}
+.loadAvg-table {
+	margin-bottom:0px;
+}
+
+.loadAvg-table>tbody>tr>td {
+	border-right:1px solid #ccc;
+	text-align: center;
+	border-top: 0;
+}
+
+.loadAvg-table>tbody>tr>td:last-child{
+	border-right: 0;
+}
+
+.loadAvg-table>tbody>tr>td h3 {
+	padding-bottom: 5px;
+	color: #097cf4;
+	font-size: 20px
+}
+
+.loadAvg-table>tbody>tr>td h4 {
+	padding-bottom: 5px;
+}
+
+.loadAvg-table>thead>tr>th {
+	text-align: center;
+}
+
+#boot {
+	padding-left: 0;
+}
+
+#online {
+	padding-left: 0px;
+}
+
+
+.ram-table>tbody>tr>td {
+	border-right:1px solid #ccc;
+	border-top: 0;
+	text-align: center;
+}
+
+#ram {
+	padding-left: 0px;
+}
+
+
+
+.ram-table>tbody>tr>td:last-child{
+	border-right: 0;
+}
+
+.ram-table>tbody>tr>td h3 {
+	padding-bottom: 5px;
+	color: #097cf4;
+	font-size: 20px
+}
+.ram-table>tbody>tr>td h4 {
+	padding-bottom: 5px;
+}
+
+.ram-table {
+	margin-bottom: 0px;
+}
+
+.ram-table>tbody>tr>td h4 span {
+	font-size: 14px;	
+}
+
+#bandwidth .panel-body {
+	padding:0px 15px 0 15px;
+}
+
+#Services-Status 
+{
+	padding-left:0px;
+}
+
+#Services-Status .panel-body {
+	padding: 15px 15px;
+}
+
+.load-section div h6 {
+	text-align:center;
+}
+
+.panel-body {
+	padding: 15px 15px 0 15px;
+}
+tspan {
+	font-size:13px;
+}
+
+#server.panel-body {
+	padding:15px;
+}
+
+.highcharts-button {
+	display:none;
+}
+
+#container-ram path:first-child{
+	fill:#f2cf0e;
+}
+
+#container-ram path:last-child {
+	fill:#e0e0e0;
+	stroke-color:red;
+}
+.highcharts-tooltip+text {
+	display:none;
+}
+
+#container-cpu path:last-child {
+	fill:#e0e0e0;
+	stroke-width:0
+}
+
+#container-cpu path:first-child {
+	fill:#c30e0e;
+}
+
+.services-status {
+	min-width: 200px;
+	height:200px; 
+	max-width:600px; 
+	margin: 0 auto;
+}
+.table>thead>tr>th {
+	border-bottom: 0px;
+	border-top: 1px solid #ddd !important;
+}
+
+.panel-body.login-body{
+	padding: 0px 15px 0 15px 15px;
+}
+.tablesorter-default thead .sorter-false {
+	padding: 8px !important;
+}
+.tablesorter-default .header, .tablesorter-default .tablesorter-header {
+	padding: 8px 20px 8px 8px !important;
+}
+
+#cpu {padding-left:0; }
+#load-avg {padding-left: 0;}
+#login {padding-left: 0}
+
+@media(max-width: 767px) {
+	.nav>li {width:100%; text-align: left; border-left: 0; border-bottom: 1px solid #ddd; padding-top: 0;	}
+	.navbar-nav li a img { float: left; display: inline-block; margin-right: 15px;}
+	.navbar-default .navbar-nav>li>a { padding-top: 10px;}
+	.nav>li:last-child { border-bottom: 0;}
+	.navbar-nav { margin: 0px -15px;}
+
+	.load-section div h6 {text-align: left; margin-left: 63px;}
+
+	.navbar-collapse{ padding-right: 0px; padding-left: 0px; }
+	.container.nav-container {    padding-right: 0px; padding-left: 0px;}
+			}
+
+@media(max-width:991px){
+	#cpu {padding-left:10px; }
+	#ping {padding-left:10px; }
+	#bandwidth {padding-left:10px; }
+	#load-avg {padding-left: 10px;}
+	#boot {padding-left: 10px;}
+	#online {padding-left: 10px;}
+	#login {padding-left: 10px;}
+
+}
+
+@media(max-width: 1280px){
+	.container{width: 100%;}
+}
