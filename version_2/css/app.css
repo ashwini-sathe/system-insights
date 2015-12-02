@@ -11,6 +11,23 @@ h1,h2,h3,h4,h5,h6,ul,li {
 	padding: 0px;
 	margin: 0px;
 }
+#system-container {
+	padding-top: 30px;
+}
+
+.container {
+	width: 1280px;
+}
+.performance-container {
+	border-bottom: 1px solid #e4e9ed;
+    margin: 0 15px;
+}
+
+.performance-container h4 {
+    line-height: 60px;
+    padding: 0 0px;
+}
+
 .container {
 	width: 1280px;
 }

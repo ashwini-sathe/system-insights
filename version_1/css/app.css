@@ -369,23 +369,8 @@ tspan {
 .tablesorter-default .header, .tablesorter-default .tablesorter-header {
 	padding: 8px 20px 8px 8px !important;
 }
-
-@media(max-width: 1280px){
-	.container{width: 100%;}
-}
-
-@media(max-width:991px){
-	#cpu {padding-left:10px; }
-	#ping {padding-left:10px; }
-	#bandwidth {padding-left:10px; }
-	#load-avg {padding-left: 10px;}
-	#boot {padding-left: 10px;}
-	#online {padding-left: 10px;}
-	#login {padding-left: 10px;}
-	#ram {padding-left: 10px;}
-	#Services-Status {padding-left:10px;}
-	#network {padding-left: 10px;}
-}
+#Server-Status {padding-left: 0}
+#login {padding-left: 0}
 
 @media(max-width: 767px) {
 	.nav>li {width:100%; text-align: left; border-left: 0; border-bottom: 1px solid #ddd; padding-top: 0;	}
@@ -400,3 +385,22 @@ tspan {
 	.container.nav-container {    padding-right: 0px; padding-left: 0px;}
 			}
 
+@media(max-width:991px){
+	#cpu {padding-left:0px; }
+	#ping {padding-left:0px; }
+	#bandwidth {padding-left:0px; }
+	#load-avg {padding-left: 0px;}
+	#boot {padding-left: 0px;}
+	#online {padding-left: 0px;}
+	#login {padding-left: 0px;}
+	#swap {padding-left: 0}
+	#network {padding-left: 0}
+	#systemContainer {padding-left: 0}
+	#disk {padding-left: 0}
+	#users {padding-left: 0}
+
+}
+
+@media(max-width: 1280px){
+	.container{width: 100%;}
+}
